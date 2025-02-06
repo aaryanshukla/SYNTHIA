@@ -1,0 +1,27 @@
+
+# environment.yaml
+name: synthia-env
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch
+  - torchaudio
+  - torchvision
+  - cudatoolkit=11.3  # Not used on M1; for cross-platform compatibility
+  - pip
+  - pip:
+    - transformers
+    - diffusers
+    - accelerate
+    - sentencepiece
+    - librosa
+    - soundfile
+    - pydub
+    - streamlit
+    - gradio
+    - numpy
+    - scipy
+    - scikit-learn
+    - nltk
